@@ -1,0 +1,13 @@
+<div class="container my-2">
+  
+  <app-my-table
+  [page]="curPage"
+  [totalRes]="totalData"
+    [HeadArray]="headArray"
+    [GridArray]="usersList"
+    [isEditBtn]="true"
+    (OnEdit)="editUser($event)"
+    (OnDelete)="deleteUser($event)"
+  ></app-my-table>
+  <div class="text-danger text-center">{{errors}}</div>
+</div>
